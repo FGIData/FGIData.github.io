@@ -1,1 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>FGI – Data Analyst Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 25px;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #f7f9fc;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 55px 0;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .profile-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #2563eb;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .intro {
+      font-size: 17px;
+      max-width: 700px;
+      color: #4b5563;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 55px 0;
+    }
+
+    section:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: #111827;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #eaf2ff;
+      color: #1d4ed8;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    /* PROJECTS */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .project-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      transition: 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #1f2937;
+    }
+
+    .project-card p {
+      color: #6b7280;
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: #2563eb;
+      color: white;
+      padding: 9px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+    }
+
+    footer a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 750px) {
+
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+<header>
+  <div class="container header-content">
+
+    <img
+      class="profile-image"
+      src="https://github.com/FGIData.png"
+      alt="FGI Data Analyst">
+
+    <div>
+
+      <h1>FGI – Data Analyst</h1>
+
+      <div class="subtitle">
+        Data Analysis • Reporting • Excel • Power BI • VBA
+      </div>
+
+      <p class="intro">
+        I am a computer engineer and IT master teacher with extensive
+        experience in data management, reporting and decision support.
+        I enjoy working with data, creating clear reports and transforming
+        information into useful insights.
+      </p>
+
+    </div>
+
+  </div>
+</header>
+
+
+<section>
+  <div class="container">
+
+    <h2>Skills</h2>
+
+    <div class="skills">
+
+      <span class="skill">Excel</span>
+      <span class="skill">Power BI</span>
+      <span class="skill">SQL</span>
+      <span class="skill">VBA</span>
+      <span class="skill">Python</span>
+      <span class="skill">Data Analysis</span>
+      <span class="skill">Reporting</span>
+      <span class="skill">Data Visualization</span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+
+      <div class="project-card">
+
+        <h3>Excel Dashboard Project</h3>
+
+        <p>
+          Interactive Excel dashboard created for data analysis,
+          reporting and visualization.
+        </p>
+
+        <a
+          class="button"
+          href="https://github.com/FGIData/Data-Analyst-Excel-Dashboard-Project"
+          target="_blank">
+          View project
+        </a>
+
+      </div>
+
+
+      <div class="project-card">
+
+        <h3>Excel Visualization with VBA</h3>
+
+        <p>
+          Excel data visualization project using VBA automation
+          to improve reporting and workflow efficiency.
+        </p>
+
+        <a
+          class="button"
+          href="https://github.com/FGIData/Data-Analyst-Excel-Visualisation-with-VBA"
+          target="_blank">
+          View project
+        </a>
+
+      </div>
+
+
+      <div class="project-card">
+
+        <h3>Power BI Financial Report</h3>
+
+        <p>
+          Financial reporting and interactive data visualization
+          created in Microsoft Power BI.
+        </p>
+
+        <a
+          class="button"
+          href="https://github.com/FGIData/Power-BI-Report"
+          target="_blank">
+          View project
+        </a>
+
+      </div>
+
+
+      <div class="project-card">
+
+        <h3>Random Number Refresh in Excel with VBA</h3>
+
+        <p>
+          Excel VBA automation project demonstrating automatic
+          random-number refresh and workbook interaction.
+        </p>
+
+        <a
+          class="button"
+          href="https://github.com/FGIData/Data-Analyst-Random-number-refresh-in-Excel-with-VBA"
+          target="_blank">
+          View project
+        </a>
+
+      </div>
+
+
+      <div class="project-card">
+
+        <h3>Excel Dashboard – Pivot Table</h3>
+
+        <p>
+          Excel dashboard and data-analysis project using
+          structured data and PivotTables.
+        </p>
+
+        <a
+          class="button"
+          href="https://github.com/FGIData/Kimutatas-Dashboard-Excel"
+          target="_blank">
+          View project
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+
+  <p>
+    FGI – Data Analyst Portfolio
+    &nbsp; | &nbsp;
+    <a href="https://github.com/FGIData" target="_blank">
+      GitHub Profile
+    </a>
+  </p>
+
+</footer>
+
+
+</body>
+</html>
